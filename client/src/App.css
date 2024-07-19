@@ -1,0 +1,311 @@
+
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #403d3d;
+}
+
+#title{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+#titlebox{
+  width: 200px;
+  height: 45px;
+  background-color: #F7EBEB;
+  color: #403d3d;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 180%;
+  border-radius: 20px;
+}
+
+#main{
+  margin-top: 30px;
+  width: 80%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+#calendar{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: default;
+
+}
+#todo{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#add_categori{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#addcategori{
+  width: 35px;
+  height: 35px;
+  background-color: #F7EBEB;
+  border: none;
+  color:gray;
+  border-radius: 100%;
+  font-weight: bold;
+  font-size: 30px;
+}
+#list{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style: none;
+  max-height: 100%;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+#list::-webkit-scrollbar{
+  display: none;
+}
+#inputcategori{
+  margin-right: 5px;
+  width: 78%;
+  height: auto;
+  border: none;
+  background-color: #F7EBEB;
+  border-bottom: black;
+}
+.catebox{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.categori{
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  left: 839px;
+  top: 295px;
+  background: #F7EBEB;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+
+}
+
+#categoritext{
+  width:78%;
+  margin-right: 5px;
+  text-align: center;
+}
+.add_item{
+  background-color: white;
+  border-radius: 10px;
+  width: 22%;
+  text-align: center;
+  margin-right: 5px;
+  font-weight:bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.item{
+  display: flex;
+  list-style: none;
+  margin-top: 5px;
+  background-color:  #F7EBEB;
+  width: 100%;
+  height: 40px;
+}
+
+.itemtext{
+  background-color: #F7EBEB;
+  border: none;
+  
+
+}
+#itemlist{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 5px;
+  marker: none;
+  padding: 0;
+}
+input:focus{
+  outline: none;
+  background-color: #F7EBEB;
+}
+
+
+.checkbox:checked~div{
+  background-color: #7b7b7b;
+}
+
+#calendar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-calendar {
+  background-color: #403d3d;
+  border: none;
+  margin-right: 100px;
+}
+
+/* 년-월 */
+
+.react-calendar__navigation__label > span {
+  color: #F7EBEB;
+  font-size: auto;
+  font-weight: bold;
+  line-height: 140%;
+}
+
+.react-calendar__navigation button:enabled:hover{
+color: #171717;
+  width: 15px;
+  background-color: #171717;
+  border-radius: 3px;
+}
+
+/* 요일 */
+.react-calendar__month-view__weekdays__weekday{
+  color: #F7EBEB;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #ffadad;
+  font-size: 15px;
+  font-weight: bold;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+}
+
+/* 이번 달 일자 */
+.react-calendar__tile{
+  color: #F7EBEB;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;;
+}
+
+/* 저번 달 & 다음 달 일자 */
+.react-calendar__month-view__days__day--neighboringMonth{
+  color: #5F5F5F;
+  font-size: 15px;
+  font-weight: bold;
+  width: 44px;
+  height: 44px;
+}
+
+/* 오늘 날짜 */
+.react-calendar__tile--now{
+  background-color: #292929;
+  color: #c58d8d;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+/* 선택된 날짜의 배경색 변경 */
+.react-calendar__tile--active {
+  background-color: #ffffff;
+  color: #171717;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.react-calendar__tile--hasActive {
+  background: #51F8C4;
+}
+
+.react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus{
+  background: #51F8C4;
+}
+
+/* 일정 있는 날 표시 점 */
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #51F8C4;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 3px;
+}
+
+@media (max-width: 575px){
+  #title{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #main{
+    height:80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #calendar{
+    width: 80%;
+    height: 52%;
+    margin: 0;
+  }
+  .react-calendar{
+    margin: 0;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  #todo{
+    width: 80%;
+    height: 55%;
+  }
+  #list{
+    max-height: 100%;
+    overflow-y: scroll;
+  }
+}
+
+
